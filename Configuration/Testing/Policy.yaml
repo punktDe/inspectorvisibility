@@ -1,0 +1,19 @@
+privilegeTargets:
+
+  'PunktDe\InspectorVisibility\Security\Authorization\Privilege\InspectorVisibilityPrivilege':
+    'PunktDe.InspectorVisibility:AdminFields':
+      matcher: "${propertyName == 'adminOption'}"
+
+roles:
+  'PunktDe.InspectorVisibility:RestrictedEditor':
+    privileges:
+      -
+        privilegeTarget: 'PunktDe.InspectorVisibility:AdminFields'
+        permission: DENY
+
+  'Neos.Neos:Administrator':
+    privileges:
+      -
+        privilegeTarget: 'PunktDe.InspectorVisibility:AdminFields'
+        permission: GRANT
+

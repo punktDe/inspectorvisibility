@@ -1,0 +1,18 @@
+{
+    "description": "Neos package to configure the visibility of inspector elements using privileges",
+    "type": "neos-package",
+    "name": "punktde/inspectorvisibility",
+    "require": {
+        "neos/neos": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PunktDe\\InspectorVisibility\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "PunktDe.InspectorVisibility"
+        }
+    }
+}

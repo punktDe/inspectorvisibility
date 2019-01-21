@@ -1,0 +1,16 @@
+'PunktDe.InspectorVisibility:TestNode':
+  superTypes:
+    'Neos.Neos:Node': true
+
+  properties:
+    visibleByConfiguration:
+      type: string
+      ui:
+        inspector:
+          hidden: false
+
+    hiddenByConfiguration:
+      type: string
+      ui:
+        inspector:
+          hidden: true

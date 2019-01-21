@@ -1,0 +1,5 @@
+PunktDe:
+  InspectorVisibility:
+    defaultContext:
+      String: Neos\Eel\Helper\StringHelper
+      Array: Neos\Eel\Helper\ArrayHelper
