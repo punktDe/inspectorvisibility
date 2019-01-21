@@ -1,5 +1,7 @@
 # PunktDe.InspectorVisibility
 
+[![Latest Stable Version](https://poser.pugx.org/punktde/inspectorvisibility/v/stable)](https://packagist.org/packages/punktde/inspectorvisibility) [![Total Downloads](https://poser.pugx.org/punktde/inspectorvisibility/downloads)](https://packagist.org/packages/punktde/inspectorvisibility)
+
 This package allows you to configure the visibility of inspector elements, like properties, groups and tabs using policies. With that you can configure the visibility of these elements according to the users roles.
 
 **CAUTION: Although this is done with policies, this is not a security feature!**
@@ -10,7 +12,7 @@ If you prevent a user from editing nodes, you aditionally need to define policie
 
 The installation is done with composer:
 
-	composer require punktde/oauth2-server
+	composer require punktde/inspectorvisbility
 	
 ## Usage
 
