@@ -128,7 +128,7 @@ class NodeTypesConfigurationHiddenStateAspect
             $tabName = $nodeTypeConfiguration['ui']['inspector']['groups'][$groupName]['tab'] ?? '--tab-not-set-' . $this->noMatchIdentifier;
 
             $configuredHiddenState = $nodeTypeConfiguration['properties'][$propertyName]['ui']['inspector']['hidden'] ?? null;
-
+            
             $adjustedHiddenState = $this->visibilityDeterminationService->determineHiddenState(
                 $configuredHiddenState,
                 $nodeTypeName,

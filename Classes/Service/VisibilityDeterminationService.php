@@ -26,16 +26,16 @@ class VisibilityDeterminationService
     protected $privilegeManager;
 
     /**
-     * @param bool $originalHiddenState
+     * @param string|bool|null $originalHiddenState
      * @param string $nodeTypeName
      * @param string $tabName
      * @param string $groupName
      * @param string $propertyName
-     * @return bool If the target should be hidden
+     * @return string|bool If the target should be hidden
      * @throws \Neos\Flow\Security\Exception
      * @throws \Neos\Flow\Security\Exception\NoSuchRoleException
      */
-    public function determineHiddenState(?bool $originalHiddenState, string $nodeTypeName, string $tabName, string $groupName, string $propertyName): ?bool
+    public function determineHiddenState($originalHiddenState, string $nodeTypeName, string $tabName, string $groupName, string $propertyName)
     {
         $result = $this->privilegeManager->getPrivilegePermissionResult(
             InspectorVisibilityPrivilege::class, new InspectorVisibilitySubject($nodeTypeName, $tabName, $groupName, $propertyName)
