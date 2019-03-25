@@ -12,7 +12,7 @@ If you prevent a user from editing nodes, you aditionally need to define policie
 
 The installation is done with composer:
 
-	composer require punktde/inspectorvisbility
+	composer require punktde/inspectorvisibility
 	
 ## Usage
 
