@@ -20,7 +20,7 @@ class VisibilityDeterminationServiceTest extends FunctionalTestCase
 
     protected $testableSecurityEnabled = true;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setup();
         $this->visibilityDeterminationService = $this->objectManager->get(VisibilityDeterminationService::class);
