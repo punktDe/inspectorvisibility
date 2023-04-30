@@ -6,7 +6,7 @@ This package allows you to configure the visibility of inspector elements, like 
 
 **CAUTION: Although this is done with policies, this is not a security feature!**
 
-If you prevent a user from editing nodes, you aditionally need to define policies with an `EditNodePropertyPrivilege` for example.
+If you prevent a user from editing nodes, you additionally need to define policies with an `EditNodePropertyPrivilege` for example.
 
 ## Installation
 
@@ -48,8 +48,8 @@ roles:
 
 #### Matcher Examples
 
-* Adress all *uriPathSegment* properties: `matcher: "${propertyName == 'uriPathSegment'}`
-* Adress all *meta* tabs of all nodeTypes `"${tabName == 'meta'}"`
+* Address all *uriPathSegment* properties: `matcher: "${propertyName == 'uriPathSegment'}`
+* Address all *meta* tabs of all nodeTypes `"${tabName == 'meta'}"`
 * Address all *title* fields of a specific type `matcher: "${nodeTypeName == 'Neos.Demo:Registration' && propertyName == 'title'}"`
 
 
