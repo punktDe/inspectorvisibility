@@ -12,11 +12,13 @@ If you prevent a user from editing nodes, you aditionally need to define policie
 
 The installation is done with composer:
 
-	composer require punktde/inspectorvisibility
-	
+```bash
+composer require punktde/inspectorvisibility
+```
+
 ## Usage
 
-The matcher can be defined using standard eel. The following properties to match for are available: 
+The matcher can be defined using standard eel. The following properties to match for are available:
 
 * nodeTypeName
 * tabName
@@ -29,7 +31,7 @@ If no policy is matching for a role, the configured visibility is used. Same, if
 
 #### Example `Policy.yaml`
 
-```
+```yaml
 privilegeTargets:
 
   'PunktDe\InspectorVisibility\Security\Authorization\Privilege\InspectorVisibilityPrivilege':
